@@ -19,7 +19,7 @@ export default class Command extends BaseCommand {
     run = async (M: ISimplifiedMessage): Promise<void> => {
         // check if Bot is the admin
         if (!M.groupMetadata?.admins?.includes(this.client.user.jid))
-            return void M.reply(`I'm not an admin of this group.`)
+            return void M.reply(`Sorry, I'm not an admin of this group. Pls make me admin to use this command.`)
         if ((await this.client.getGroupData(M.from)).invitelink) {
             const code = await this.client.groupInviteCode(M.from).catch(() => {
                 return void M.reply('Could not get the invite link')
@@ -29,10 +29,10 @@ export default class Command extends BaseCommand {
                 `*Invite link:* https://chat.whatsapp.com/${code}`,
                 MessageType.text
             )
-            return void M.reply('Sent you the Group Link in personal message')
+            return void M.reply('I have just sent you this Group Link in personal message. Pls check!')
         } else {
             return void M.reply(
-                `Command not enabled by the admin.\nUse *${this.client.config.prefix}act invitelink* to enable it`
+                `Invitelink Command is not enabled by admins.\n Ask admins to use *${this.client.config.prefix}act invitelink* to enable it.`
             )
         }
     }
