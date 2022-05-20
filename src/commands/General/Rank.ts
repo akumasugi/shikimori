@@ -57,7 +57,7 @@ export default class Command extends BaseCommand {
 		} else if (exp < 100000) {
 			role = "💎 Supreme";
 		} else {
-			role = "❄️ Mystic";
+			role = "👑 Immortal Demon Lord";
 		}
 		// eslint-disable-next-line @typescript-eslint/no-explicit-any
 		let level: number;
