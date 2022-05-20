@@ -28,7 +28,7 @@ export default class Command extends BaseCommand {
             ];
           
             const buttonMessage: any = {
-            contentText: `please press the button to continue`,
+            contentText: `Please press the button to continue`,
             footerText: "*🦋 Hitagi Bot 🦋*",
             buttons: buttons,
             headerType: 1,
