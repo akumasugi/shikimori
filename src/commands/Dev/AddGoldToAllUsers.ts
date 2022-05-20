@@ -23,9 +23,9 @@ export default class Command extends BaseCommand {
     { joined }: IParsedArgs
   ): Promise<void> => {
     if (!joined)
-      return void (await M.reply(`Please provide the amount of gold to give.`));
+      return void (await M.reply(`You didn't provide the amount of gold to give everyone.`));
     const term: any = joined.split(" ")[0];
-    if (isNaN(term)) return void M.reply(`Well... It should be a number.`);
+    if (isNaN(term)) return void M.reply(`Huhh... It must be a number.`);
     await this.client.DB.user
       .find({})
       .sort([["Xp", "descending"]])
@@ -35,7 +35,7 @@ export default class Command extends BaseCommand {
           await this.client.addGold(res[i].jid, term);
         }
         return void M.reply(
-          `🟩 *Added ${term} gold to ${res.length} users wallet.*`
+          `🟩 *i have Added ${term} gold to ${res.length} users wallet.*`
         );
       });
   };
