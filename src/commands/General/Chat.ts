@@ -11,7 +11,7 @@ export default class Command extends BaseCommand {
         super(client, handler, {
             command: 'chat',
             description: 'Chat with the Bot in group',
-            aliases: ['bot'],
+            aliases: ['bot', 'talk'],
             category: 'fun',
             usage: `${client.config.prefix}bot (text)`,
             baseXp: 30
@@ -35,10 +35,10 @@ export default class Command extends BaseCommand {
                     return void M.reply(res.data.cnt)
                 })
                 .catch(() => {
-                    M.reply(`Intriguing...`)
+                    M.reply(`Yes, i am listening what you want to say...`)
                 })
         } else {
-            M.reply(`Chat Bot Url not set.`)
+            M.reply(`Chat Bot Url not set, Sorry.`)
         }
     }
 }
