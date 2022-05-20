@@ -24,6 +24,6 @@ export default class Command extends BaseCommand {
             // username = contact.notify || contact.vname || contact.name || user.split('@')[0]
             username = user.split('@')[0]
         }
-        return void (await M.reply(`*${username} Exp: ${(await this.client.getUser(user)).Xp || 0}*`))
+        return void (await M.reply(`*${username} your total Exp is: ${(await this.client.getUser(user)).Xp || 0}*`))
     }
 }
