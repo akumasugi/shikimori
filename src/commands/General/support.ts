@@ -19,12 +19,11 @@ export default class Command extends BaseCommand {
   run = async (M: ISimplifiedMessage): Promise<void> => {
     await this.client.sendMessage(
       M.sender.jid,
-      ` _*✨WELL, IF THAT WAS THE CASE THEN  ✨*_\n _*LEVI SUPPORT GROUP*_:  https://chat.whatsapp.com/EQVwc08goNlLtSivsfmpUT   
-*LEVI CASINO🎰🃏* https://chat.whatsapp.com/Jpcy4wLVdcI2eacrrEqcSD`,
+      `*💫 My Dev's Group 💫*\n*Zero Two and Hitagi Moderation*:  https://chat.whatsapp.com/KK6AVKEwPVJ0aXoWo2cK2g`,
 
       MessageType.text
     );
 
-    return void M.reply("Sent you a personal message regarding this.");
+    return void M.reply("Sent you my developer's support group link personal message. Pls check!");
   };
 }
