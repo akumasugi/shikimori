@@ -8,10 +8,9 @@ export default class Command extends BaseCommand {
 	constructor(client: WAClient, handler: MessageHandler) {
 		super(client, handler, {
 			command: "newhelp",
-			description:
-				"Displays the help",
+			description:"Displays the help",
 			category: "general",
-			aliases: ["nh"],
+			aliases: ["h2", "help2", "nh"],
 			baseXp: 30,
 		});
 	}
@@ -30,7 +29,7 @@ export default class Command extends BaseCommand {
           
             const buttonMessage: any = {
             contentText: `please press the button to continue`,
-            footerText: "🎇 Beyond 🎇",
+            footerText: "*🦋 Hitagi Bot 🦋*",
             buttons: buttons,
             headerType: 1,
             };
