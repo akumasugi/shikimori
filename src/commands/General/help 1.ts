@@ -35,9 +35,9 @@ export default class Command extends BaseCommand {
               ];
               if ( help === 1) {
               const buttonMessage: any = {
-              contentText: `\n\n_*🪙ECONAMY🪙*_\n\n 
+              contentText: `\n\n *🍁ECONOMY🍁* \n\n 
               🎊${this.client.config.prefix}slot\n\n🎊 ${this.client.config.prefix}gamble\n\n🎊 ${this.client.config.prefix}give\n\n🎊 ${this.client.config.prefix}bank\n\n🎊 ${this.client.config.prefix}rob\n\n🎊 ${this.client.config.prefix}wallet\n\n🎊 ${this.client.config.prefix}deposit\n\n🎊 ${this.client.config.prefix}withdraw🎊${this.client.config.prefix}daily`,
-              footerText: "🎇 Beyond 🎇",
+              footerText: "🦋 Hitagi Bot 🦋",
               buttons: buttons,
               headerType: 1,
               };
