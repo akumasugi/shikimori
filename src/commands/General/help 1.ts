@@ -17,7 +17,7 @@ export default class Command extends BaseCommand {
             command: "help 1",
             description: 'Displays the Econamy menu',
             category: "general",
-            aliases: ["h"],
+            aliases: ["h", "menu"],
             usage: `${client.config.prefix}help [1]`,
         })
     }
