@@ -64,7 +64,7 @@ export default class Command extends BaseCommand {
 
 🚀  Enjoy Hitagi and have fun.\n\n`,
 
-      footerText: "©zero two 2022",
+      footerText: "© 𝑯𝒊𝒕𝒂𝒈𝒊 𝑩𝒐𝒕 𝒃𝒚 𝑭𝒂𝒏𝒕𝒐𝒙",
 
       buttons: buttons,
 
