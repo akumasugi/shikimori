@@ -24,7 +24,7 @@ export default class Command extends BaseCommand {
 
       usage: `${client.config.prefix}help (command_name)`,
 
-      aliases: ["h"],
+      aliases: ["h,menu"],
 
       baseXp: 30,
 
@@ -44,7 +44,7 @@ export default class Command extends BaseCommand {
 
     const chitoge =
 
-      "https://telegra.ph/file/7dc6ce63a93a39e785232.mp4";
+      "https://c.tenor.com/mRzYBAfokrsAAAPo/ougi-anime-pfp.mp4";
 
     if (!parsedArgs.joined) {
 
@@ -86,25 +86,25 @@ export default class Command extends BaseCommand {
 
       }
 
-      let text = `👋🏻 (💙ω💙) Konichiwa! *@${
+      let text = `👋🏻 Hi There! *@${
 
         user.split("@")[0]
 
-      }*, I'm 𝕃𝕖𝕧𝕚 𝔹𝕠𝕥𝕥𝕠.\n\nMy prefix is - "${
+      }*, I'm *Hitagi Senjougahara* Bot.\n\nMy prefix is - "${
 
         this.client.config.prefix
 
-      }"\n\nThe usable commands are listed below.\n\n`;
+      }"\n\nAll of my commands are listed below.\n\n`;
 
       const keys = Object.keys(categories);
 
       for (const key of keys)
 
-        text += `*━━━❰🧧 ${this.client.util.capitalize(
+        text += `*《🧣 ${this.client.util.capitalize(
 
           key
 
-        )} 🧧❱━━━*\n\`\`\`${categories[key]
+        )} 🧣》*\n\`\`\`${categories[key]
 
           .map((command) => command.config?.command)
 
@@ -124,7 +124,7 @@ export default class Command extends BaseCommand {
 
           mimetype: Mimetype.gif,
 
-          caption: `${text} 📝 *Note: Use ${this.client.config.prefix}help <command_name> to view the command info*`,
+          caption: `${text} 📝 *Note: Use ${this.client.config.prefix}help <command name> to view that specific command info and usage*`,
 
           contextInfo: { mentionedJid: [user] },
 
@@ -150,7 +150,7 @@ export default class Command extends BaseCommand {
 
     M.reply(
 
-      `🚀 *Command:* ${this.client.util.capitalize(
+      `💫 *Command:* ${this.client.util.capitalize(
 
         command.config?.command
 
@@ -158,7 +158,7 @@ export default class Command extends BaseCommand {
 
         state ? "Disabled" : "Available"
 
-      }\n⛩ *Category:* ${this.client.util.capitalize(
+      }\n📖 *Category:* ${this.client.util.capitalize(
 
         command.config?.category || ""
 
