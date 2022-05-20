@@ -50,19 +50,19 @@ export default class Command extends BaseCommand {
 
       contentText: `\n\n_*
 
-          🏮 *BOT RULES*
+          🍁 *Rules for Hitagi's usage*
 
-🚀 _Do not call bot, if you do then you'll get automatically blocked and banned by bot._
+🚀  Do not call Hitagi, if you do then you'll get automatically blocked and banned instantly by her.
 
-🚀 _Do not spam bot with commands, if bot is not responding then it means either bot is off or there's internet issue at owner's end._
+🚀  Do not spam Hitagi with commands, if it's not responding then it means either bot is off or the owner is having internet issue.
 
-🚀 _Do not abuse/disrespect bot and its owner._
+🚀  Do not abuse/disrespect Hitagi and its owner.
 
-🚀 _If you see any bug/error contact owners._
+🚀  If you see any bugs or having any issues contact owner.
 
-🚀 _If you want this bot in your group then contact owner by typing .owner/mod._
+🚀  If you want this bot in your group then contact owner (Fantox) by typing .owner/mod._
 
-🚀 _Enjoy the bot and have fun as you can._\n\n`,
+🚀  Enjoy Hitagi and have fun.\n\n`,
 
       footerText: "©zero two 2022",
 
