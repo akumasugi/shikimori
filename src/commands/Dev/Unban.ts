@@ -26,11 +26,11 @@ export default class Command extends BaseCommand {
             // const username = info.notify || info.vname || info.name || user.split('@')[0]
             // const username = user.split('@')[0]
             if (!data?.ban) {
-                text += `🟨 @${user.split('@')[0]}: Not Banned\n`
+                text += `🟨 @${user.split('@')[0]}: is not Banned.\n`
                 continue
             }
             await this.client.unbanUser(user)
-            text += `🟩 @${user.split('@')[0]}: Unbanned\n`
+            text += `🟩 @${user.split('@')[0]}: is now globally Unbanned.\n`
         }
         // M.reply(text)
         await M.reply(
