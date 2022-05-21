@@ -25,7 +25,7 @@ export default class Command extends BaseCommand {
 		{ joined }: IParsedArgs
 	): Promise<void> => {
 		if (!this.client.config.gifApi)
-			return void M.reply("No key set for searching gifs. ");
+			return void M.reply("No Tenor api key set for searching gifs. ");
 		if (!joined) return void (await M.reply(`GIve me a search term, Baka!`));
 		const search = joined.trim();
 		const gif = await axios
