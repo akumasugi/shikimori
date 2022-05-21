@@ -90,7 +90,7 @@ export default class Command extends BaseCommand {
 
         user.split("@")[0]
 
-      }*, I'm *Hitagi Senjougahara* Bot.\n\nMy prefix is - "${
+      }*, I'm *Micchon Shikimori* , A WhatsApp Bot designed by Fantox.\n\nMy prefix is "${
 
         this.client.config.prefix
 
