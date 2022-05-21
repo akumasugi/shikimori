@@ -25,7 +25,7 @@ export default class Command extends BaseCommand {
 	): Promise<void> => {
 		// eslint-disable-next-line @typescript-eslint/no-explicit-any
 		if (!joined)
-			return void (await M.reply(`Give me a wallpaper term to search, Baka!`));
+			return void (await M.reply(`Pls give me wallpaper term to search!`));
 		const chitoge = joined.trim();
 		const wall = new AnimeWallpaper();
 		const pages = [1, 2, 3, 4];
@@ -48,7 +48,7 @@ export default class Command extends BaseCommand {
 					MessageType.image,
 					undefined,
 					undefined,
-					`*🌟 Here you go.*`,
+					`*💫 Here is your wallpaper*`,
 					undefined
 				).catch((e) => {
 					console.log(
