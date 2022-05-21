@@ -29,7 +29,7 @@ export default class Command extends BaseCommand {
           
             const buttonMessage: any = {
             contentText: `Please press the button to continue`,
-            footerText: "*🦋 Hitagi Bot 🦋*",
+            footerText: "*🦋 Shikimori Bot 🦋*",
             buttons: buttons,
             headerType: 1,
             };
