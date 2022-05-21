@@ -19,7 +19,7 @@ export default class Command extends BaseCommand {
     }
 
     run = async (M: ISimplifiedMessage, { joined }: IParsedArgs): Promise<void> => {
-        if (!joined) return void M.reply('Please provide me a search term.. onegai')
+        if (!joined) return void M.reply('Please provide me a search term!')
         const term = joined.trim()
         const { videos } = await yts(term)
         if (!videos || videos.length <= 0) return void M.reply(`⚓ No Matching videos found for the term : *${term}*`)
@@ -32,7 +32,7 @@ export default class Command extends BaseCommand {
                 contextInfo: {
                     externalAdReply: {
                         title: videos[0].title.substr(0, 30),
-                        body: `author : ${videos[0].author.name.substr(0, 20)}\n🎆BEYOND`,
+                        body: `author : ${videos[0].author.name.substr(0, 20)}\n🦋 Shikimori 🦋`,
                         mediaType: 2,
                         thumbnailUrl: `https://i.ytimg.com/vi/${audio.id}/hqdefault.jpg`,
                         mediaUrl: audio.url
