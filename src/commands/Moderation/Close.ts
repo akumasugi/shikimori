@@ -18,7 +18,7 @@ export default class Command extends BaseCommand {
 
     run = async (M: ISimplifiedMessage): Promise<void> => {
         if (!M.groupMetadata?.admins?.includes(this.client.user.jid))
-            return void M.reply("How can I close the group without being an admin?")
+            return void M.reply("Tell me how can I close the group without being an Admin Myself?")
         if (M.groupMetadata.announce === 'true') return void M.reply('Group is already closed, Baka!')
         this.client.groupSettingChange(M.groupMetadata.id, GroupSettingChange.messageSend, true)
         return
