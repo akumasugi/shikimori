@@ -27,8 +27,8 @@ export default class Command extends BaseCommand {
     ];
 
     const buttonMessage: any = {
-      contentText: `What's up buddy I am *Hitagi Senjougahara*, a multi-device based WhatsApp bot designed by *Fantox*`,
-      footerText: "© 𝑯𝒊𝒕𝒂𝒈𝒊 𝑩𝒐𝒕 𝒃𝒚 𝑭𝒂𝒏𝒕𝒐𝒙",
+      contentText: `What's up buddy I am *Shikimori San*, a multi-device based WhatsApp bot designed by *Fantox*\n`,
+      footerText: "© 𝙎𝙝𝙞𝙠𝙞𝙢𝙤𝙧𝙞 𝘽𝙤𝙩 𝙗𝙮 𝙁𝙖𝙣𝙩𝙤𝙭",
       buttons: buttons,
       headerType: 1,
     };
