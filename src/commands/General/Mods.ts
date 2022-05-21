@@ -23,7 +23,7 @@ export default class Command extends BaseCommand {
     let text = "𝙎𝙝𝙞𝙠𝙞𝙢𝙤𝙧𝙞 𝘽𝙤𝙩 𝙊𝙬𝙣𝙚𝙧𝙨\n\n";
     filteredMap.forEach(
       (user, index) =>
-        (text += `#${index + 1}\n🎉 *Username: ${
+        (text += `#${index + 1}\n💫 *Username: ${
           user.notify || user.vname || user.name || "null"
         }*\n🍁 *Contact no: https://wa.me/+${user?.jid?.split("@")[0]}*\n\n`)
     );
