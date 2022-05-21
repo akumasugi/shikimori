@@ -44,7 +44,7 @@ export default class Command extends BaseCommand {
 
     const chitoge =
 
-      "https://c.tenor.com/QstWgIBxVc0AAAPo/shikimori-shikimoris-not-just-cute.mp4";
+      "https://c.tenor.com/eMsHZ2dl79AAAAPo/kawaii-dake-janai.mp4";
 
     if (!parsedArgs.joined) {
 
