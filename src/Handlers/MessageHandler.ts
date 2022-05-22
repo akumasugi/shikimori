@@ -107,30 +107,30 @@ export default class MessageHandler {
 		if (bot !== this.client.user.name && !reservedCommands.includes(cmd)) return void null;
 		if (!command)
 			return void M.reply(
-				`No such command, Baka! Have you never seen someone use the command *${this.client.config.prefix}help*.`
+				`Sorry Dear, you are using wrong command. Pls type *${this.client.config.prefix}help* to see my command list.`
 			);
 		const user = await this.client.getUser(M.sender.jid);
-		if (user.ban) return void M.reply("You're Banned from using commands.");
+		if (user.ban) return void M.reply("Sorry, You're Banned from using my commands because you broke rules!");
 		const state = await this.client.DB.disabledcommands.findOne({
 			command: command.config.command,
 		});
 		if (state)
 			return void M.reply(
-				`✖ This command is disabled${
+				`✖ Sorry, This command is disabled${
 					state.reason ? ` for ${state.reason}` : ""
 				}`
 			);
 		if (!command.config?.dm && M.chat === "dm")
-			return void M.reply("This command can only be used in groups");
+			return void M.reply("Sorry, Bot can only work in Groups. Use commands in Groups.");
 		if (
 			command.config?.modsOnly &&
 			!this.client.config.mods?.includes(M.sender.jid)
 		) {
-			return void M.reply(`Only MODS are allowed to use this command.`);
+			return void M.reply(`Sorry, Only my loved ones can use this command.`);
 		}
 		if (command.config?.adminOnly && !M.sender.isAdmin)
 			return void M.reply(
-				`This command is only meant for the group admins, Baka!`
+				`Sorry, This command can only be used by Admins`
 			);
 		try {
 			await command.run(M, this.parseArgs(args));
@@ -169,12 +169,12 @@ export default class MessageHandler {
 	};
 
 	handleState = async (): Promise<void> => {
-		const text = `Thanks for waiting, Darling !! 💖w💖 Let's continue, shall we ?.. where we were again ?? (t-ehe)`
+		const text = `So, let's continue where we left 💞`
 		await this.client.sendMessage("120363025090167429@g.us", text, MessageType.text)
 	}
 
 	sendReconnectMessage = async (): Promise<void> => {
-		const text = `I'm back, Darling !! 💖w💖`
+		const text = `Successfully reconnected with server 💓`
 		await this.client.sendMessage("120363025090167429@g.us", text, MessageType.text)
 	}
 
