@@ -44,10 +44,10 @@ export default class EventHandler {
 					.map((jid) => `@${jid.split("@")[0]}`)
 					.join(", ")}*`
 			: event.action === "remove"
-			? `Goodbye *@${
+			? `Sayonara *@${
 					event.participants[0].split("@")[0]
-			  }* 👋🏻, we're probably not gonna miss you.`
-			: `Ara Ara looks like *@${
+			  }* 👋🏻, I hope you will come back soon.`
+			: `Wow looks like *@${
 					event.participants[0].split("@")[0]
 			  }* got ${this.client.util.capitalize(event.action)}d${
 					event.actor ? ` by *@${event.actor.split("@")[0]}*` : ""
@@ -80,7 +80,7 @@ export default class EventHandler {
 				welcome.toBuffer(),
 				MessageType.image,
 				{
-					caption: `- ${group.subject || "___"} -\n\n💠 *Group Description:*\n${
+					caption: `🍁 ${group.subject || "___"} 🍁\n\n📜 *Group Description:*\n${
 						group.desc
 					}\n\nHope you follow the rules and have fun!\n\n*‣ ${event.participants
 						.map((jid) => `@${jid.split("@")[0]}`)
@@ -113,9 +113,9 @@ export default class EventHandler {
 				goodbye.toBuffer(),
 				MessageType.image,
 				{
-					caption: `Goodbye *@${
+					caption: `Sayonara *@${
 						event.participants[0].split("@")[0]
-					}* 👋🏻, we're probably not gonna miss you.`,
+					}* 👋🏻, I hope you will come back soon.`,
 					contextInfo,
 				}
 			));
@@ -132,7 +132,7 @@ export default class EventHandler {
 			);
 		}
 		if (demote) {
-			const text = `Ara Ara looks like *@${
+			const text = `Oho looks like *@${
 				event.participants[0].split("@")[0]
 			}* got demoted.`;
 			return void this.client.sendMessage(
