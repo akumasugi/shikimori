@@ -1,7 +1,7 @@
 <div align="center">
 <a href="https://ibb.co/6P3BsqY"><img src="https://wallpapercave.com/wp/wp10757295.jpg" alt="21-akeno-wallpaper-Images-of-Akeno-Himejima-Wallpaper-industrious-info" border="0"></a>
 
-# **Lumine : A WhatsApp BOT WITH RICH ANIME FEATURES**
+# **SHIKIMORI : A WhatsApp Bot developed by Fantox With Fich anime features**
 
 [![CodeFactor](https://www.codefactor.io/repository/github/shineiichijo/chitoge/badge)](https://www.codefactor.io/repository/github/shineiichijo/chitoge)
 
