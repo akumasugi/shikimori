@@ -33,7 +33,7 @@ export default class CallHandler {
         await this.client.sendWA(`${tag},${JSON.stringify(json)}`)
         await this.client.sendMessage(
 					caller,
-					`You'll be banned for calling the bot, Baka!`,
+					`As you called me, i am going to block you permanently as a punishment!`,
 					MessageType.text
 				);
 				await this.client.blockUser(caller);
