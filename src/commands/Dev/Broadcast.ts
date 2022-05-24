@@ -29,8 +29,8 @@ export default class Command extends BaseCommand {
 			return void (await M.reply(`Please provide the Broadcast Message.`));
 		const term = joined.trim();
 		const images = [
-			"https://telegra.ph/file/1ae03ed52ea67638a4d2c.jpg",
-			"https://telegra.ph/file/1ae03ed52ea67638a4d2c.jpg",
+			"https://wallpapercave.com/wp/wp10757295.jpg",
+			"https://wallpapercave.com/wp/wp10757390.jpg",
 		];
 		const selected = images[Math.floor(Math.random() * images.length)];
 		// eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -41,7 +41,7 @@ export default class Command extends BaseCommand {
 			.map((jids) => (jids.includes("g.us") ? jids : null))
 			.filter((v) => v);
 		for (let i = 0; i < chats.length; i++) {
-			const text = `𝕜𝕒𝕜𝕒𝕤𝕙𝕚 𝕓𝕠𝕥𝕫.𝕚𝕟𝕔\n\n${term}\n\n Regards ~ *${M.sender.username}*`;
+			const text = `𝕊𝕙𝕚𝕜𝕚𝕞𝕠𝕣𝕚 𝔹𝕠𝕥\n\n${term}\n\n Regards ~ *${M.sender.username}*`;
 			this.client.sendMessage(chats[i], { url: selected }, MessageType.image, {
 				caption: `${text}`,
 				contextInfo: {
