@@ -32,7 +32,7 @@
 ## 🍥 Features of the Repo
 
 -   To view all features, click
-    here➡️[Chitoge_featuresList.md](https://github.com/ShineiIchijo/Chitoge/blob/main/Features.md)
+    here➡️[Shikimori_featuresList.md](https://github.com/FantoX001/Shikimori/blob/main/Features.md)
 
 ## 💪 Contribution
 
