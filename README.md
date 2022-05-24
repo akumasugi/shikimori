@@ -27,7 +27,7 @@
 ## 💻 Deploy/Hosting Guide
 
 -   Section Moved to
-    [Chitoge-Guides](https://github.com/ShineiIchijo/Chitoge-Guides/blob/main/README.md)
+    [Zero Two Guides](https://github.com/FantoX001/Zero-Two-Guides)
 
 ## 🍥 Features of the Repo
 
