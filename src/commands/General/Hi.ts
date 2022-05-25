@@ -27,7 +27,7 @@ export default class Command extends BaseCommand {
     ];
 
     const buttonMessage: any = {
-      contentText: `What's up buddy I am *Shikimori San*\n`,
+      contentText: `What's up dear i am *Shikimori San*\n`,
       footerText: "© 𝙎𝙝𝙞𝙠𝙞𝙢𝙤𝙧𝙞 ",
       buttons: buttons,
       headerType: 1,
