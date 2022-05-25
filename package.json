@@ -12,7 +12,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/FantoX001/Shikimori.git"
+        "url": "https://github.com/akumasugi/shikimori.git"
     },
     "keywords": [
         "bot",
@@ -23,9 +23,9 @@
     "author": "Synthesized Infinity, Shinei Ichijo & Fantox",
     "license": "AGPL-3.0",
     "bugs": {
-        "url": "https://github.com/FantoX001/Shikimori/issues"
+        "url": "https://github.com/akumasugi/shikimori/issues"
     },
-    "homepage": "https://github.com/FantoX001/Shikimori#readme",
+    "homepage": "https://github.com/akumasugi/shikimori#readme",
     "devDependencies": {
         "@types/express": "^4.17.12",
         "@types/fs-extra": "^9.0.11",
