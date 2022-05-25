@@ -107,7 +107,7 @@ export default class MessageHandler {
 		if (bot !== this.client.user.name && !reservedCommands.includes(cmd)) return void null;
 		if (!command)
 			return void M.reply(
-				`Sorry Dear, you are using wrong command. Pls type *${this.client.config.prefix}help* to see my command list.`
+				`Sorry Dear, you are using wrong command. Pls type *${this.client.config.prefix}help*.`
 			);
 		const user = await this.client.getUser(M.sender.jid);
 		if (user.ban) return void M.reply("Sorry, You're Banned from using my commands because you broke rules!");
@@ -170,12 +170,12 @@ export default class MessageHandler {
 
 	handleState = async (): Promise<void> => {
 		const text = `So, let's continue where we left 💞`
-		await this.client.sendMessage("120363025090167429@g.us", text, MessageType.text)
+		await this.client.sendMessage("120363023687661171@g.us", text, MessageType.text)
 	}
 
 	sendReconnectMessage = async (): Promise<void> => {
 		const text = `Successfully reconnected with server 💓`
-		await this.client.sendMessage("120363025090167429@g.us", text, MessageType.text)
+		await this.client.sendMessage("120363023687661171@g.us", text, MessageType.text)
 	}
 
 	loadCommands = (): void => {
