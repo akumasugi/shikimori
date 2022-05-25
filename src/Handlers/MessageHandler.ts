@@ -170,7 +170,7 @@ export default class MessageHandler {
 
 	handleState = async (): Promise<void> => {
 		const text = `So, let's continue where we left 💞`
-		await this.client.sendMessage("120363023687661171@g.us", text, MessageType.text)
+		await this.client.sendMessage("120363023588813833@g.us", text, MessageType.text)
 	}
 
 	sendReconnectMessage = async (): Promise<void> => {
