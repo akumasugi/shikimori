@@ -64,7 +64,7 @@ export default class Command extends BaseCommand {
 
 🚀  If you Break Rules you will be banned soon. \n\n`,
 
-      footerText: "© 𝙎𝙝𝙞𝙠𝙞𝙢𝙤𝙧𝙞 𝘽𝙤𝙩 𝙗𝙮 𝙁𝙖𝙣𝙩𝙤𝙭",
+      footerText: "© 𝙎𝙝𝙞𝙠𝙞𝙢𝙤𝙧𝙞",
 
       buttons: buttons,
 
