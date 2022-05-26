@@ -1,7 +1,7 @@
 <div align="center">
 <a href="https://ibb.co/6P3BsqY"><img src="https://wallpapercave.com/wp/wp10757295.jpg" alt="21-akeno-wallpaper-Images-of-Akeno-Himejima-Wallpaper-industrious-info" border="0"></a>
 
-# **SHIKIMORI : A WhatsApp Bot with rich features**
+# **SHIKIMORI : A WhatsApp Bot created by AKUMA**
 
 [![CodeFactor](https://www.codefactor.io/repository/github/shineiichijo/chitoge/badge)](https://www.codefactor.io/repository/github/shineiichijo/chitoge)
 
